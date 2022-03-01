@@ -5,7 +5,7 @@
 <h2>Features</h2>
 <h3>Implementations</h3>
 <p>
-  🌟 <b>FontAwesome</b><br>
+  🌟 <b><a href="#FontAwesome">FontAwesome</a></b><br>
   Source: <a href="https://github.com/matthewrdev/fa2cs">matthewrdev fa2cs</a> <i>(adapted version)</i> and Font Awesome Cheat Sheet <i>(Feb 2022)</i><br>
   Details: includes <code>FontAwesomeRegular.cs</code>, <code>FontAwesomeSolid.cs</code>, and <code>FontAwesomeBrands.cs</code>
 </p>
@@ -14,10 +14,10 @@
   <thead>
     <tr>
       <th></th>
-      <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StandardEntry&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-      <th>&nbsp;&nbsp;&nbsp;CustomSearchBar&nbsp;&nbsp;&nbsp;</th>
-      <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CustomLabel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-      <th>StandardCollectionView</th>
+      <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#StandardEntry">StandardEntry</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      <th>&nbsp;&nbsp;&nbsp;<a href="#CustomSearchBar">CustomSearchBar</a>&nbsp;&nbsp;&nbsp;</th>
+      <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#CustomLabel">CustomLabel</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      <th><a href="#StandardCollectionView">StandardCollectionView</a></th>
     </tr>
   </thead>
   <tbody>
@@ -52,3 +52,10 @@
     </tr>
   </tbody>
 </table>
+
+<h2>Usage</h2>
+<h3 id="FontAwesome">FontAwesome</h3>
+<h3 id="StandardEntry">StandardEntry</h3>
+<h3 id="CustomSearchBar">CustomSearchBar</h3>
+<h3 id="CustomLabel">CustomLabel</h3>
+<h3 id="StandardCollectionView">StandardCollectionView</h3>
