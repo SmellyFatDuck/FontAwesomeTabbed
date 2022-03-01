@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FontAwesomeTabbed.Views.FARegularPage"
+             xmlns:vm="clr-namespace:FontAwesomeTabbed.ViewModels"
+             xmlns:views="clr-namespace:FontAwesomeTabbed.Views"
+             xmlns:models="clr-namespace:FontAwesomeTabbed.Models"
+             xmlns:controls="clr-namespace:FontAwesomeTabbed.Controls"
+             x:DataType="vm:FARegularViewModel"
+             Title="FontAwesome">
+
+    <ContentPage.BindingContext>
+        <vm:FARegularViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Scroll to bottom" Command="{Binding ScrollToBottomCommand}"/>
+    </ContentPage.ToolbarItems>
+
+    <RefreshView IsRefreshing="{Binding IsRefreshing}"
+                 Command="{Binding RefreshCommand}">
+        <StackLayout>
+
+            <controls:StandardCollectionView VerticalOptions="StartAndExpand"
+                                             ItemsSource="{Binding Icons}"
+                                             SelectionMode="None"
+                                             ScrollToItem="{Binding ScrollToIcon}"
+                                             Margin="5">
+
+                <controls:StandardCollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" 
+                                     Span="3"
+                                     HorizontalItemSpacing="10"
+                                     VerticalItemSpacing="10" />
+                </controls:StandardCollectionView.ItemsLayout>
+
+                <controls:StandardCollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <views:IconItemView x:DataType="models:Icon" />
+                    </DataTemplate>
+                </controls:StandardCollectionView.ItemTemplate>
+
+                <controls:StandardCollectionView.Footer>
+                    <StackLayout Padding="0,10,0,0">
+                        <Button Text="Scroll to top" 
+                                VerticalOptions="End"
+                                Command="{Binding ScrollToTopCommand}" />
+                    </StackLayout>
+                </controls:StandardCollectionView.Footer>
+                
+            </controls:StandardCollectionView>
+
+            <Frame BackgroundColor="LightGray" VerticalOptions="End" HeightRequest="60">
+                <controls:CustomSearchBar Text="{Binding SearchText}"
+                                          SearchCommand="{Binding SearchCommand}"
+                                          BackgroundColor="White"
+                                          Placeholder="Search icon..."
+                                          PlaceholderColor="Gray"
+                                          TextColor="Black"
+                                          CornerRadius="30"
+                                          IconColor="{x:StaticResource Primary}" />
+            </Frame>
+
+        </StackLayout>
+    </RefreshView>
+
+</ContentPage>

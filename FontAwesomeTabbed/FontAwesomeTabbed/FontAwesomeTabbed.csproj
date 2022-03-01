@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\FontAwesomeBrands.otf" />
+    <None Remove="Fonts\FontAwesomeRegular.otf" />
+    <None Remove="Fonts\FontAwesomeSolid.otf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Fonts\FontAwesomeBrands.otf" />
+    <EmbeddedResource Include="Fonts\FontAwesomeRegular.otf" />
+    <EmbeddedResource Include="Fonts\FontAwesomeSolid.otf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\FARegularPage.xaml.cs">
+      <DependentUpon>FARegularPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\FASolidPage.xaml.cs">
+      <DependentUpon>FASolidPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\FABrandsPage.xaml.cs">
+      <DependentUpon>FABrandsPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\DataTemplates\FontAwesomeDataTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\IconItemView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:FontAwesomeTabbed.Views"
+       xmlns:templates="clr-namespace:FontAwesomeTabbed.Views.DataTemplates"
+       Title="FontAwesomeTabbed"
+       x:Class="FontAwesomeTabbed.AppShell"
+       xmlns:fa="clr-namespace:FontAwesome" 
+       xmlns:fontawesometabbed="clr-namespace:FontAwesomeTabbed" 
+       x:DataType="fontawesometabbed:AppShell">
+
+    <!--
+        The overall app visual hierarchy is defined here, along with navigation.
+    
+        https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/
+    -->
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.ForegroundColor" Value="White" />
+                <Setter Property="Shell.TitleColor" Value="White" />
+                <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
+                <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="White"/>
+            </Style>
+            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
+            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <TabBar>
+        <Tab x:Name="FontAwesomeTab" Title="FontAwesome">
+            <Tab.Icon>
+                <FontImageSource FontFamily="FASolid" Glyph="{x:Static fa:FontAwesomeSolid.Dragon}" />
+            </Tab.Icon>
+            <ShellContent Title="Regular" ContentTemplate="{DataTemplate local:FARegularPage}" />
+            <ShellContent Title="Solid" ContentTemplate="{DataTemplate local:FASolidPage}" />
+            <ShellContent Title="Brands" ContentTemplate="{DataTemplate local:FABrandsPage}" />
+        </Tab>
+        <ShellContent Title="Browse" ContentTemplate="{DataTemplate local:ItemsPage}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="FARegular" Glyph="{x:Static fa:FontAwesomeRegular.AddressBook}" />
+            </ShellContent.Icon>
+        </ShellContent>
+    </TabBar>
+
+
+</Shell>
