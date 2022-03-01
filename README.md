@@ -6,25 +6,25 @@
 <ul>
   <li>
     <p>
-      StandardEntry<br>
+      <b>StandardEntry</b><br>
       <i>Taken from <a href="https://github.com/jesulink2514/XamBooksApp/tree/feature/feat-entry">jesulink2514's XamlBooksApp</a></i>
     </p>
   </li>
   <li>
     <p>
-      CustomSearchBar<br>
+      <b>CustomSearchBar</b><br>
       <i>And adapted version, taken from <a href="https://github.com/jesulink2514/XamBooksApp/tree/feature/feat-entry">jesulink2514's XamlBooksApp</a></i>
     </p>
   </li>
   <li>
     <p>
-      CustomLabel<br>
+      <b>CustomLabel</b><br>
       <i>An auto font sizing Label, incuding minimum and maximum font sizes</i>
     </p>
   </li>
   <li>
     <p>
-      StandardCollectionView<br>
+      <b>StandardCollectionView</b><br>
       <i>And adapted version from an online source I cannot find</i>
     </p>
   </li>
