@@ -1,6 +1,5 @@
 ﻿using FontAwesomeTabbed.ViewModels;
 using FontAwesomeTabbed.Views;
-using FontAwesomeTabbed.Views.DataTemplates;
 using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
