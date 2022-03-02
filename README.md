@@ -217,10 +217,10 @@ xmlns:controls="clr-namespace:FontAwesomeTabbed.Controls"
 
 ```
 <controls:StandardCollectionView VerticalOptions="StartAndExpand"
-                                             ItemsSource="{Binding Icons}"
-                                             SelectionMode="None"
-                                             ScrollToItem="{Binding ScrollToIcon}"
-                                             Margin="5">
+                                 ItemsSource="{Binding Icons}"
+                                 SelectionMode="None"
+                                 ScrollToItem="{Binding ScrollToIcon}"
+                                 Margin="5">
 
                 <controls:StandardCollectionView.ItemsLayout>
                     <GridItemsLayout Orientation="Vertical" 
@@ -244,5 +244,4 @@ xmlns:controls="clr-namespace:FontAwesomeTabbed.Controls"
                 </controls:StandardCollectionView.Footer>
                 
             </controls:StandardCollectionView>
-            ```
-
+```
