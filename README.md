@@ -1,6 +1,6 @@
 <h1>FontAwesomeTabbed</h1>
 <p>I developed this as a base template for my iOS and Android apps.</p>
-<p>If you have any ideas on what else should be included as a standard template, generally something you include in all apps, let me know!</p>
+<p><i>If you have any ideas on what else should be included as a standard template, generally something you include in all apps, let me know!</i></p>
 
 <h2>Features</h2>
 <h3>Implementations</h3>
@@ -55,6 +55,27 @@
 
 <h2>Usage</h2>
 <h3 id="FontAwesome">FontAwesome</h3>
+
+  <b>Tab Icon</b>
+
+  ```
+  <ShellContent Title="About" ContentTemplate="{DataTemplate local:AboutPage}">
+    <ShellContent.Icon>
+      <FontImageSource FontFamily="FARegular" Glyph="{x:Static fa:FontAwesomeRegular.AddressBook}" />
+    </ShellContent.Icon>
+  </ShellContent>
+  ```
+  
+  <b>Image</b>
+  
+  ```
+  <Image>
+    <Image.Source>
+      <FontImageSource FontFamily="FARegular" Glyph="{x:Static fa:FontAwesomeRegular.AddressBook}" />
+    </Image.Source>
+  </Image>
+  ```
+  
 <h3 id="StandardEntry">StandardEntry</h3>
 <h3 id="CustomSearchBar">CustomSearchBar</h3>
 <h3 id="CustomLabel">CustomLabel</h3>
