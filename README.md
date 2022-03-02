@@ -101,8 +101,7 @@
     <tr>
       <td>Details</td>
       <td>
-        <i>Icon</i> <b>ScrollToItem</b><br>
-        Replace <u>Icon</u> with your object, I haven't attempted changing Icon to Object
+        <i>object</i> <b>ScrollToItem</b>
       </td>
     </tr>
   </tbody>
@@ -283,5 +282,5 @@ xmlns:controls="clr-namespace:FontAwesomeTabbed.Controls"
 </controls:StandardCollectionView>
 ```
 
-<b>ScrollToItem</b> takes an object <i>(Icon)</i> and scrolls to it's position.
+<b>ScrollToItem</b> takes an object and scrolls to it's position, within the CollectionView source.
 <blockquote>In the template, I've used Commands in Buttons to change the value of the ScrollToIcon variable; scroll to top, and scroll to bottom.</blockquote>
