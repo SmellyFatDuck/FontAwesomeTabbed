@@ -245,3 +245,4 @@ xmlns:controls="clr-namespace:FontAwesomeTabbed.Controls"
                 
             </controls:StandardCollectionView>
             ```
+
