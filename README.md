@@ -1,7 +1,8 @@
-<h1>FontAwesomeTabbed</h1>
+<h1>Xamarin Forms iOS &amp; Android Template<br><sup>FontAwesome &amp; Custom Controls</sup></h1>
 <p>I developed this as a base template for my iOS and Android apps.</p>
 <p><i>If you have any ideas on what else should be included as a standard template, generally something you include in all apps, let me know!</i></p>
 
+<p>&nbsp;</p>
 <h2>Features</h2>
 <h3>Implementations</h3>
 <table>
@@ -24,6 +25,7 @@
   </tbody>
 </table>
 
+<p>&nbsp;</p>
 <h3>Controls and Renderers</h3>
 
 <table>
@@ -106,6 +108,8 @@
   </tbody>
 </table>
 
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <h2>Usage</h2>
 <h3 id="FontAwesome">FontAwesome</h3>
 
@@ -145,6 +149,8 @@
   <Label FontFamily="FARegular" Text="{x:Static fa:FontAwesomeRegular.AddressBook}" />
   ```
   
+  
+<p>&nbsp;</p>
 <h3 id="StandardEntry">StandardEntry</h3>
 
   <blockquote>I don't think I modified the control or renderers in anyway, but it is excellent for virtually all applications. See the original for more information: <a href="https://github.com/jesulink2514/XamBooksApp/tree/feature/feat-entry">jesulink2514/<b>XamlBooksApp</b></a></blockquote>
@@ -167,6 +173,8 @@ xmlns:controls="clr-namespace:FontAwesomeTabbed.Controls"
             Placeholder="Full Name" />
 ```
   
+  
+<p>&nbsp;</p>
 <h3 id="CustomSearchBar">CustomSearchBar</h3>
 
 <blockquote>This differs from jesulink2514's XamlBooksApp by having a control but still using the XamlBooksApp SearchBar iOS and Android renderers.</blockquote>
@@ -190,6 +198,8 @@ xmlns:controls="clr-namespace:FontAwesomeTabbed.Controls"
                           IconColor="{x:StaticResource Primary}" />
 ```
 
+
+<p>&nbsp;</p>
 <h3 id="CustomLabel">CustomLabel</h3>
 
 Add the namespace:
@@ -207,6 +217,8 @@ xmlns:controls="clr-namespace:FontAwesomeTabbed.Controls"
                         MaximumFontSize="24" />
 ```
 
+
+<p>&nbsp;</p>
 <h3 id="StandardCollectionView">StandardCollectionView</h3>
 
 ```xml
