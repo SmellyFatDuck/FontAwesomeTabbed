@@ -192,5 +192,56 @@ xmlns:controls="clr-namespace:FontAwesomeTabbed.Controls"
 
 <h3 id="CustomLabel">CustomLabel</h3>
 
+Add the namespace:
+
+```
+...
+xmlns:controls="clr-namespace:FontAwesomeTabbed.Controls"
+...
+```
+
+```
+<controls:StandardLabel HeightRequest="120"
+                        Text="This font size will auto fir the container, but make sure you set the HeightRequest"
+                        MinimumFontSize="8"
+                        MaximumFontSize="24" />
+```
 
 <h3 id="StandardCollectionView">StandardCollectionView</h3>
+
+```
+...
+xmlns:controls="clr-namespace:FontAwesomeTabbed.Controls"
+...
+```
+
+```
+<controls:StandardCollectionView VerticalOptions="StartAndExpand"
+                                             ItemsSource="{Binding Icons}"
+                                             SelectionMode="None"
+                                             ScrollToItem="{Binding ScrollToIcon}"
+                                             Margin="5">
+
+                <controls:StandardCollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" 
+                                     Span="3"
+                                     HorizontalItemSpacing="10"
+                                     VerticalItemSpacing="10" />
+                </controls:StandardCollectionView.ItemsLayout>
+
+                <controls:StandardCollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <views:IconItemView x:DataType="models:Icon" />
+                    </DataTemplate>
+                </controls:StandardCollectionView.ItemTemplate>
+
+                <controls:StandardCollectionView.Footer>
+                    <StackLayout Padding="0,10,0,0">
+                        <Button Text="Scroll to top" 
+                                VerticalOptions="End"
+                                Command="{Binding ScrollToTopCommand}" />
+                    </StackLayout>
+                </controls:StandardCollectionView.Footer>
+                
+            </controls:StandardCollectionView>
+            ```
