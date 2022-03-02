@@ -29,7 +29,7 @@
 <table>
   <thead>
     <tr>
-      <th colspan="2"><a href="#StandardEntry">StandardEntry</a></th>
+      <th colspan="2"><a href="#StandardEntry">StandardEntry</a> : Entry</th>
     </tr>
   </thead>
   <tbody>
@@ -52,7 +52,7 @@
 <table>
   <thead>
     <tr>
-      <th colspan="2"><a href="#CustomSearchBar">CustomSearchBar</a></th>
+      <th colspan="2"><a href="#CustomSearchBar">CustomSearchBar</a> : SearchBar</th>
     </tr>
   </thead>
   <tbody>
@@ -75,7 +75,7 @@
 <table>
   <thead>
     <tr>
-      <th colspan="2"><a href="#CustomLabel">CustomLabel</a></th>
+      <th colspan="2"><a href="#CustomLabel">CustomLabel</a> : Label</th>
     </tr>
   </thead>
   <tbody>
@@ -92,7 +92,7 @@
 <table>
   <thead>
     <tr>
-      <th colspan="2"><a href="#StandardCollectionView">StandardCollectionView</a></th>
+      <th colspan="2"><a href="#StandardCollectionView">StandardCollectionView</a> : CollectionView</th>
     </tr>
   </thead>
   <tbody>
@@ -109,15 +109,19 @@
 <h2>Usage</h2>
 <h3 id="FontAwesome">FontAwesome</h3>
 
+<blockquote>This version differs to matthewrdev's fa2cs in that it requires the developer to asign the specific class, corresponding to the font family, then allows the developer to freely select the glyph from IntelliSense's suggestions. Whereas with fa2cs, you need to predetermine the glyph and it's corresponding font.</blockquote>
+
   First and foremost, add the namespace to the root node:
 
-  ```
+  ```xml
+...
   xmlns:fa="clr-namespace:FontAwesome"
+...
   ```
 
   <b>ShellContent Icon</b>
 
-  ```
+  ```xml
   <ShellContent Title="About" ContentTemplate="{DataTemplate local:AboutPage}">
     <ShellContent.Icon>
       <FontImageSource FontFamily="FARegular" Glyph="{x:Static fa:FontAwesomeRegular.AddressBook}" />
@@ -127,7 +131,7 @@
   
   <b>Image</b>
   
-  ```
+  ```xml
   <Image>
     <Image.Source>
       <FontImageSource FontFamily="FARegular" Glyph="{x:Static fa:FontAwesomeRegular.AddressBook}" />
@@ -137,11 +141,56 @@
   
   <b>Label</b>
   
-  ```
+  ```xml
   <Label FontFamily="FARegular" Text="{x:Static fa:FontAwesomeRegular.AddressBook}" />
   ```
   
 <h3 id="StandardEntry">StandardEntry</h3>
+
+  <blockquote>I don't think I modified the control or renderers in anyway, but it is excellent for virtually all applications. See the original for more information: <a href="https://github.com/jesulink2514/XamBooksApp/tree/feature/feat-entry">jesulink2514/<b>XamlBooksApp</b></a></blockquote>
+  
+Firstly, add the namespace:
+
+```xml
+...
+xmlns:controls="clr-namespace:FontAwesomeTabbed.Controls"
+...
+```
+  
+```xml
+  <controls:StandardEntry
+            Padding="20,10,20,10"
+            BorderColor="LightGray"
+            TextColor="Black"
+            BorderThickness="1"
+            CornerRadius="20"
+            Placeholder="Full Name" />
+```
+  
 <h3 id="CustomSearchBar">CustomSearchBar</h3>
+
+<blockquote>This differs from jesulink2514's XamlBooksApp by having a control but still using the XamlBooksApp SearchBar iOS and Android renderers.</blockquote>
+
+Add the namespace:
+
+```
+...
+xmlns:controls="clr-namespace:FontAwesomeTabbed.Controls"
+...
+```
+
+```xml
+<controls:CustomSearchBar Text="{Binding SearchText}"
+                          SearchCommand="{Binding SearchCommand}"
+                          BackgroundColor="White"
+                          Placeholder="Search icon..."
+                          PlaceholderColor="Gray"
+                          TextColor="Black"
+                          CornerRadius="30"
+                          IconColor="{x:StaticResource Primary}" />
+```
+
 <h3 id="CustomLabel">CustomLabel</h3>
+
+
 <h3 id="StandardCollectionView">StandardCollectionView</h3>
