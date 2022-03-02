@@ -182,7 +182,29 @@ xmlns:controls="clr-namespace:FontAwesomeTabbed.Controls"
             CornerRadius="20"
             Placeholder="Full Name" />
 ```
-  
+
+<table>
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>Associated files</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Android</td>
+      <td>Renderers/<code>StandardEntryRenderer.cs</code></td>
+    </tr>
+    <tr>
+      <td>iOS</td>
+      <td>Renderers/<code>iOSStandardEntryRenderer.cs</code></td>
+    </tr>
+    <tr>
+      <td>iOS</td>
+      <td>Renderers/<code>UITextFieldPadding.cs</code></td>
+    </tr>
+  </tbody>
+</table>
   
 <p>&nbsp;</p>
 <h3 id="CustomSearchBar">CustomSearchBar</h3>
@@ -208,6 +230,24 @@ xmlns:controls="clr-namespace:FontAwesomeTabbed.Controls"
                           IconColor="{x:StaticResource Primary}" />
 ```
 
+<table>
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>Associated files</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Android</td>
+      <td>Renderers/<code>CustomSearchBarRenderer.cs</code></td>
+    </tr>
+    <tr>
+      <td>iOS</td>
+      <td>Renderers/<code>iOSCustomSearchBarRenderer.cs</code></td>
+    </tr>
+  </tbody>
+</table>
 
 <p>&nbsp;</p>
 <h3 id="CustomLabel">CustomLabel</h3>
