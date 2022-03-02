@@ -115,7 +115,17 @@
 
 <blockquote>This version differs to matthewrdev's fa2cs in that it requires the developer to asign the specific class, corresponding to the font family, then allows the developer to freely select the glyph from IntelliSense's suggestions. Whereas with fa2cs, you need to predetermine the glyph and it's corresponding font.</blockquote>
 
-  First and foremost, add the namespace to the root node:
+  First and foremost, download the Fonts folder from the project and import it into your project.<br>
+  Make sure you have the <code>Build Action</code> <i>(in Properties)</i> set to <code>Embedded resource</code> for each font <i>(.otf file)</i>.<br>
+  Then in the <code>AssemblyInfo.cs</code> file, in your project, add the following:
+
+```xml
+[assembly: ExportFont("FontAwesomeRegular.otf", Alias = "FARegular")]
+[assembly: ExportFont("FontAwesomeSolid.otf", Alias = "FASolid")]
+[assembly: ExportFont("FontAwesomeBrands.otf", Alias = "FABrands")] 
+```
+
+Finally, go ahead in your <code>.xaml</code> file and add the namespace to the root node:
 
   ```xml
 ...
