@@ -60,8 +60,6 @@
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Renderers\CustomSearchBarRenderer.cs" />
-    <Compile Include="Renderers\DroidStandardSearchBarRenderer.cs" />
-    <Compile Include="Renderers\ShadowUtils.cs" />
     <Compile Include="Renderers\StandardEntryRenderer.cs" />
     <Compile Include="Renderers\StandardLabelRenderer.cs" />
     <Compile Include="Resources\Resource.designer.cs" />

@@ -1,7 +1,4 @@
-﻿using FontAwesomeTabbed.ViewModels;
-using FontAwesomeTabbed.Views;
-using System;
-using System.Collections.Generic;
+﻿using FontAwesomeTabbed.Views;
 using Xamarin.Forms;
 
 namespace FontAwesomeTabbed
