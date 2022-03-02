@@ -23,6 +23,5 @@ namespace FontAwesomeTabbed.Controls
                 if (newValue is Icon scrollToItem)
                     current.ScrollTo(scrollToItem);
         }
-
     }
 }
