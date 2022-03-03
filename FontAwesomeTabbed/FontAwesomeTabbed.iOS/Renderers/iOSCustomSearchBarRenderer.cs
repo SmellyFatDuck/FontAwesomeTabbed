@@ -1,5 +1,4 @@
-﻿using CoreGraphics;
-using FontAwesomeTabbed.Controls;
+﻿using FontAwesomeTabbed.Controls;
 using FontAwesomeTabbed.iOS.Renderers;
 using Foundation;
 using UIKit;

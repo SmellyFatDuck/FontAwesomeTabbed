@@ -1,8 +1,5 @@
 ﻿using FontAwesomeTabbed.Services;
-using FontAwesomeTabbed.Views;
-using System;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace FontAwesomeTabbed
 {

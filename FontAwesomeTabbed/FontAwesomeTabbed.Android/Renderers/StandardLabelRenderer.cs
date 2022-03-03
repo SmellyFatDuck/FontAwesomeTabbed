@@ -1,8 +1,6 @@
-﻿using Android.App;
-using Android.Content;
+﻿using Android.Content;
 using Android.Util;
 using Android.Widget;
-using AndroidX.Core.Widget;
 using FontAwesomeTabbed.Controls;
 using FontAwesomeTabbed.Droid.Renderers;
 using Xamarin.Forms;

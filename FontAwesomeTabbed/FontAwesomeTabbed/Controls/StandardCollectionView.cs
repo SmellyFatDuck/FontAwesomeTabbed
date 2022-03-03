@@ -1,5 +1,4 @@
-﻿using FontAwesomeTabbed.Models;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace FontAwesomeTabbed.Controls
 {

@@ -1,5 +1,4 @@
 ﻿using FontAwesomeTabbed.ViewModels;
-using System.ComponentModel;
 using Xamarin.Forms;
 
 namespace FontAwesomeTabbed.Views

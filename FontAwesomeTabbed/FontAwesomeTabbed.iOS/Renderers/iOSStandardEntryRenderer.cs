@@ -1,10 +1,10 @@
 ﻿using FontAwesomeTabbed.Controls;
+using FontAwesomeTabbed.iOS.Renderers;
 using System.ComponentModel;
 using System.Drawing;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
-using FontAwesomeTabbed.iOS.Renderers;
 
 [assembly: ExportRenderer(typeof(StandardEntry), typeof(iOSStandardEntryRenderer))]
 

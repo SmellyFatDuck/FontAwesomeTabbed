@@ -1,10 +1,10 @@
-﻿using System.ComponentModel;
-using Android.Content;
+﻿using Android.Content;
 using Android.Graphics.Drawables;
-using Xamarin.Forms.Platform.Android;
 using FontAwesomeTabbed.Controls;
-using Xamarin.Forms;
 using FontAwesomeTabbed.Droid.Renderers;
+using System.ComponentModel;
+using Xamarin.Forms;
+using Xamarin.Forms.Platform.Android;
 
 [assembly: ExportRenderer(typeof(StandardEntry), typeof(StandardEntryRenderer))]
 

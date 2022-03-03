@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>FontAwesomeTabbed</Name>
+		<Description>Xamarin Forms iOS &amp; Android Template - FontAwesome &amp; Custom Controls</Description>
+		<ProjectType>CSharp</ProjectType>
+		<SortOrder>1000</SortOrder>
+		<CreateNewFolder>true</CreateNewFolder>
+		<DefaultName>FontAwesomeTabbed</DefaultName>
+		<ProvideDefaultName>true</ProvideDefaultName>
+		<LocationField>Enabled</LocationField>
+		<EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+		<Icon>Icon.png</Icon>
+		<PreviewImage>Display.png</PreviewImage>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectCollection>
+			<ProjectTemplateLink ProjectName="$projectname$" CopyParameters="true">
+				FontAwesomeTabbed\FontAwesomeTabbed.vstemplate
+			</ProjectTemplateLink>
+			<ProjectTemplateLink ProjectName="$projectname$.iOS" CopyParameters="true">
+				FontAwesomeTabbed.iOS\FontAwesomeTabbed.iOS.vstemplate
+			</ProjectTemplateLink>
+			<ProjectTemplateLink ProjectName="$projectname$.Android" CopyParameters="true">
+				FontAwesomeTabbed.Android\FontAwesomeTabbed.Android.vstemplate
+			</ProjectTemplateLink>
+		</ProjectCollection>
+	</TemplateContent>
+</VSTemplate>

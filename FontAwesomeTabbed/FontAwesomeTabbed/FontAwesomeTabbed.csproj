@@ -6,12 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Fonts\FontAwesomeBrands.otf" />
-    <None Remove="Fonts\FontAwesomeRegular.otf" />
-    <None Remove="Fonts\FontAwesomeSolid.otf" />
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="Fonts\FontAwesomeBrands.otf" />
     <EmbeddedResource Include="Fonts\FontAwesomeRegular.otf" />
     <EmbeddedResource Include="Fonts\FontAwesomeSolid.otf" />

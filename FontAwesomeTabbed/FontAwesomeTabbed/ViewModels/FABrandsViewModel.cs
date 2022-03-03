@@ -1,4 +1,5 @@
-﻿using FontAwesomeTabbed.Models;
+﻿using FontAwesome;
+using FontAwesomeTabbed.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -32,8 +33,8 @@ namespace FontAwesomeTabbed.ViewModels
                 if (_icons != null)
                 {
                     List<Icon> entities = (from e in _icons
-                                                 where e.Name.ToLower().Contains(_searchText.ToLower())
-                                                 select e).ToList();
+                                           where e.Name.ToLower().Contains(_searchText.ToLower())
+                                           select e).ToList();
                     if (entities != null && entities.Any())
                         theCollection = new ObservableCollection<Icon>(entities);
                 }
@@ -105,7 +106,7 @@ namespace FontAwesomeTabbed.ViewModels
             List<Icon> icons = new List<Icon>();
             Icon icon;
 
-            Type type = typeof(FontAwesome.FontAwesomeBrands);
+            Type type = typeof(FontAwesomeBrands);
             foreach (var property in type.GetFields())
             {
                 icon = new Icon() { Glyph = property.GetValue(null).ToString(), Name = property.Name, FontFamily = "FABrands" };

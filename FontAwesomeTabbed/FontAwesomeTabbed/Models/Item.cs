@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace FontAwesomeTabbed.Models
+﻿namespace FontAwesomeTabbed.Models
 {
     public class Item
     {
