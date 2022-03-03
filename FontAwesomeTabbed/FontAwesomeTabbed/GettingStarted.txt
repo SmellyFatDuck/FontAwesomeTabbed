@@ -1,34 +1,77 @@
-Welcome to Xamarin.Forms! Here are some tips to get started building your app.
+ __      __   _                    _____    
+ \ \    / /__| |__ ___ _ __  ___  |_   _|__ 
+  \ \/\/ / -_) / _/ _ \ '  \/ -_)   | |/ _ \
+   \_/\_/\___|_\__\___/_|_|_\___| __|_|\___/_   ____
+  / ____|              | | |     |  ____|  | | |  __ \           | |  ( )    
+ | (___  _ __ ___   ___| | |_   _| |__ __ _| |_| |  | |_   _  ___| | _|/ ___ 
+  \___ \| '_ ` _ \ / _ \ | | | | |  __/ _` | __| |  | | | | |/ __| |/ / / __|
+  ____) | | | | | |  __/ | | |_| | | | (_| | |_| |__| | |_| | (__|   <  \__ \
+ |_____/|_| |_| |_|\___|_|_|\__, |_|  \__,_|\__|_____/ \__,_|\___|_|\_\ |___/
+                             __/ |                                           
+                            |___/                             
 
-Building Your App UI
---------------------
+ _______   ______  .__   __..___________.          _____ _   ___ ___ ___ ___  
+|   ____|/  __  \ |  \ |  ||           |         |_   _/_\ | _ ) _ ) __|   \ 
+|  |__  |  |  |  ||   \|  |`---|  |----`           | |/ _ \| _ \ _ \ _|| |) |
+|   __| |  |  |  ||  . `  |    |  |                |_/_/ \_\___/___/___|___/ 
+|  |    |  `--'  ||  |\   |    |  |     
+|__|     \______/ |__| \__|    |__|    
+     ___  ____    __    ____ _______     _______.  ______  .___  ___. _______ 
+    /   \ \   \  /  \  /   /|   ____|   /       | /  __  \ |   \/   ||   ____|
+   /  ^  \ \   \/    \/   / |  |__     |   (----`|  |  |  ||  \  /  ||  |__   
+  /  /_\  \ \            /  |   __|     \   \    |  |  |  ||  |\/|  ||   __|  
+ /  _____  \ \    /\    /   |  |____.----)   |   |  `--'  ||  |  |  ||  |____ 
+/__/     \__\ \__/  \__/    |_______|_______/     \______/ |__|  |__||_______|
 
-XAML Hot Reload quickly applies UI changes as you make them to your running app.
-This is the most productive way to preview and iteratively create your UI.
 
-Try it out:
 
-1. Run the app by clicking the Start Debugging (play) button in the above toolbar. 
-2. Open <MainProject>\Views\AboutPage.xaml.
-   Don't stop the app - keep it running while making changes.
-3. Change something! Hint: change the Accent color on line 14 from "#96d1ff" to "Pink".
-4. Watch the About screen update on the device or emulator, with the logo background now pink.
 
-Keep going and try more changes!
 
-QuickStart Guide
-----------------
+Intro
+--------------------------------------------------------------------------------------
 
-Learn more of the fundamentals for building apps with Xamarin here: https://aka.ms/xamarin-quickstart
+Thanks for downloading my Xamarin Forms Mobile Application Template (not a template).
 
-Your App Shell
---------------
+If you have any suggestions for the template, please let me know via GitHub:
+https://github.com/SmellyFatDuck/FontAwesomeTabbed
 
-This template uses Shell, an app container that reduces the complexity of your apps by providing fundamental features including:
+I'm also looking at turning this into a proper multi project template, been finding it 
+a bit tricky so if you know how to go about it, with all the necessary namespace 
+changes, help me out!
 
-- A single place to describe the app's visual hierarchy.
-- Common navigation such as a flyout menu and tabs.
-- A URI-based navigation scheme that permits navigation to any page in the application.
-- An integrated search handler.
 
-Open AppShell.xaml to begin exploring. To learn more about Shell visit: https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/introduction
+
+Get Started
+--------------------------------------------------------------------------------------
+
+This solution is built using the (Tabbed) Mobile App (Xamarin Forms) template, and 
+most if not all the template files still exist in this solution.
+
+Fire up your emulator and run the application, there should be no errors upon running.
+
+I suggest keeping the FontAwesomeTabbed Views and ViewModels, to utilise as snippets
+for the SearchBar and CollectionView properties and methods.
+
+
+
+Doesn't work?
+--------------------------------------------------------------------------------------
+
+1. Try rebuilding the solution.
+2. Clean up the solution.
+3. Address any errors.
+4. If all else fails, download again or report issue on GitHub: 
+https://github.com/SmellyFatDuck/FontAwesomeTabbed
+
+
+
+Want help?
+--------------------------------------------------------------------------------------
+
+Get in touch on my GitHub! I need help with the following:
+ - Creating a multi project template (with projects referencing each other)
+ - Adding Padding to the SearchBar view
+ - Adding customisable shadow to SearchBar and Entry views
+ - Adding icons to Entry views (just like SearchBar)
+ - Adding subtle animations to Entry, SearchBar, and Button views for focus-unfocus 
+   and enabled-disabled bindings
