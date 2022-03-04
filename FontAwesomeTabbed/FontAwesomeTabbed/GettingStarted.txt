@@ -30,14 +30,10 @@
 Intro
 --------------------------------------------------------------------------------------
 
-Thanks for downloading my Xamarin Forms Mobile Application Template (not a template).
+Thanks for downloading my Xamarin Forms Mobile Application Template.
 
 If you have any suggestions for the template, please let me know via GitHub:
 https://github.com/SmellyFatDuck/FontAwesomeTabbed
-
-I'm also looking at turning this into a proper multi project template, been finding it 
-a bit tricky so if you know how to go about it, with all the necessary namespace 
-changes, help me out!
 
 
 
@@ -69,7 +65,6 @@ Want help?
 --------------------------------------------------------------------------------------
 
 Get in touch on my GitHub! I need help with the following:
- - Creating a multi project template (with projects referencing each other)
  - Adding Padding to the SearchBar view
  - Adding customisable shadow to SearchBar and Entry views
  - Adding icons to Entry views (just like SearchBar)
